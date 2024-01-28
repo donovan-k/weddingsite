@@ -7,37 +7,47 @@ header {
     background: url('path-to-your-image.jpg') center/cover; /* Set the background image */
 }
 
+body {
+    background-color: #dce5dc;
+}
+
 h1 {
     margin: 0;
+    color: #05291e;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 
 /* Style the navigation bar */
 nav {
-    background-color: #333;
+    background-color: #dce5dc;
     overflow: hidden;
+    text-align: center;
 }
 
 nav ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the items horizontally */
 }
 
 nav li {
-    float: left;
+    display: inline-block; /* Display list items in a horizontal line */
 }
 
 nav a {
     display: block;
     padding: 14px 20px;
-    color: white;
+    color: #01180a;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #c5d3c7;
+    color: #011801;
 }
+
 
 /* Add some styling for the main content sections */
 section {
@@ -72,4 +82,103 @@ table, th, td {
 th, td {
     padding: 8px;
     text-align: left;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home {
+    position: relative; /* Set position to relative for the container */
+}
+
+.home img {
+    flex-shrink: 1;
+    min-width: 80%;
+    min-height: 80%;
+}
+
+.overlay {
+    position: absolute; /* Set position to absolute for the overlay */
+    top: 20%; /* Align to the vertical center of the container */
+    left: 50%; /* Align to the horizontal center of the container */
+    transform: translate(-50%, -50%); /* Center the overlay precisely */
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    padding: 20px; /* Add padding around the overlay */
+    text-align: center;
+}
+
+.main {
+  display: block;
+  padding: 1vw; /* Add padding between each line */
+  color: #01180a; /* Text color */
+  text-decoration: none;
+  font-size:3vw;
+  font-family: 'Garamond', serif, cursive;
+  font-weight:900;
+}
+
+.suba, .subb, .subc {
+  display: block;
+  padding: 1vw; /* Add padding between each line */
+  color: #01180a; /* Text color */
+  text-decoration: none;
+  font-size:2vw;
+  font-family: 'Garamond', serif, cursive;
+  font-weight:900;
+}
+
+.join {
+  display: block;
+  margin: 10vw, 50vw;
+  padding: 8vw; /* Add padding between each line */
+  color: #01180a; /* Text color */
+  text-decoration: none;
+  font-size:3vw;
+  font-family: 'Garamond', serif, cursive;
+  font-weight:900;
+  text-align: center;
+}
+
+.aboutus {
+    display: flex; /* Use flexbox to make containers go horizontally */
+    max-width: 80%;
+    align-items: center;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.aboutdon,
+.aboutrel,
+.aboutdani {
+    flex: 1; /* Each container takes equal space */
+    margin: 1vw; /* Add margin between containers */
+    display: grid;
+    grid-template-columns: 1fr; /* Each container has one column */
+    grid-template-rows: auto auto; /* Two rows for image and text */
+    gap: 10px; /* Add gap between rows */
+    text-align: center;
+}
+
+.aboutdon img,
+.aboutrel img,
+.aboutdani img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.aboutdon a,
+.aboutrel a,
+.aboutdani a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px; /* Add margin between anchor tags */
+    max-width: 100%;
+    font-family: 'Garamond', serif, cursive;
+}
+
+.aboutrel a:last-child {
+    white-space: pre-line; /* Preserve newlines in the text */
 }
