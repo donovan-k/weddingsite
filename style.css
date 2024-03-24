@@ -144,7 +144,7 @@ th, td {
 }
 
 .aboutus {
-    display: flex; /* Use flexbox to make containers go horizontally */
+    display:contents; /* Use flexbox to make containers go horizontally */
     max-width: 80%;
     align-items: center;
     margin: 0 auto; /* Center the container horizontally */
@@ -153,20 +153,19 @@ th, td {
 .aboutdon,
 .aboutrel,
 .aboutdani {
-    flex: 1; /* Each container takes equal space */
-    margin: 1vw; /* Add margin between containers */
-    display: grid;
-    grid-template-columns: 1fr; /* Each container has one column */
-    grid-template-rows: auto auto; /* Two rows for image and text */
-    gap: 10px; /* Add gap between rows */
-    text-align: center;
+    text-align: center; /* Center the content horizontally */
+    margin-bottom: 20px; /* Add margin for spacing between containers */ 
+    padding: 20px;
 }
 
 .aboutdon img,
 .aboutrel img,
 .aboutdani img {
-    max-width: 100%; /* Ensure images don't exceed container width */
+    display: block; /* Remove any default inline spacing */
+    margin: 0 auto; /* Center the images horizontally */
+    max-width: 80%; /* Ensure images don't exceed container width */
     height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
 }
 
 .aboutdon a,
@@ -182,3 +181,56 @@ th, td {
 .aboutrel a:last-child {
     white-space: pre-line; /* Preserve newlines in the text */
 }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event {
+    margin-bottom: 40px;
+    margin-left: 5vw;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.event-divider {
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
