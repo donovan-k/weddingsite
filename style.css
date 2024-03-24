@@ -163,7 +163,7 @@ th, td {
 .aboutdani img {
     display: block; /* Remove any default inline spacing */
     margin: 0 auto; /* Center the images horizontally */
-    max-width: 80%; /* Ensure images don't exceed container width */
+    max-width: 50%; /* Ensure images don't exceed container width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
 }
@@ -172,9 +172,10 @@ th, td {
 .aboutrel a,
 .aboutdani a {
     display: block;
-    text-decoration: none;
-    margin-bottom: 5px; /* Add margin between anchor tags */
-    max-width: 100%;
+  margin: 0 auto; /* Center the images horizontally */
+  max-width: 50%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px;
     font-family: 'Garamond', serif, cursive;
 }
 
