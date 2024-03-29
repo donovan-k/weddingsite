@@ -249,3 +249,24 @@ p {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+.h1vibe {
+  text-align: center;
+  font-family: Courier New;
+  font-size: 5vw;
+  font-weight: 1;
+}
+
+.h2vibe {
+  text-align: center;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 5;
+  font-weight: 1;
+}
+
+.h3vibe {
+  text-align: center;
+  font-family: monospace;
+  font-size: 5;
+  font-weight: 1;
+}
+
