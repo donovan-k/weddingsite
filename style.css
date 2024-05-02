@@ -3,9 +3,8 @@
 header {
     position: relative;
     text-align: center;
-    color: #fff; /* Set text color to white */
+    background-color: #dce5dc; /* Set text color to white */
     padding: 50px; /* Adjust padding as needed */
-    background: url('path-to-your-image.jpg') center/cover; /* Set the background image */
 }
 
 body {
@@ -41,8 +40,9 @@ nav a {
     display: block;
     padding: 14px 10px;
     color: #01180a;
+    font-family: 'Garamond', serif, cursive;
     text-decoration: none;
-    font-size: small;
+    font-size: large;
 }
 
 nav a:hover {
@@ -108,7 +108,7 @@ tr:hover {
 
 
 .home {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -122,26 +122,29 @@ tr:hover {
     flex-shrink: 1;
     min-width: 80%;
     min-height: 80%;
+    max-width: 90%;
+    margin-top: 5%;
 }
 
 .overlay {
+    margin-top: 4%;
     position: absolute; /* Set position to absolute for the overlay */
     top: 20%; /* Align to the vertical center of the container */
     left: 50%; /* Align to the horizontal center of the container */
     transform: translate(-50%, -50%); /* Center the overlay precisely */
     background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
-    padding: 20px; /* Add padding around the overlay */
+    padding: 10px; /* Add padding around the overlay */
     text-align: center;
 }
 
 .main {
   display: block;
-  padding: 1vw; /* Add padding between each line */
+  padding: 0.5vw; /* Add padding between each line */
   color: #01180a; /* Text color */
   text-decoration: none;
-  font-size:3vw;
-  font-family: 'Garamond', serif, cursive;
-  font-weight:900;
+  font-size:3.5vw;
+  font-family: "Tangerine", cursive;
+  font-weight:950;
 }
 
 .suba, .subb, .subc {
@@ -160,15 +163,17 @@ tr:hover {
   padding: 8vw; /* Add padding between each line */
   color: #01180a; /* Text color */
   text-decoration: none;
-  font-size:3vw;
+  font-size:4vw;
   font-family: 'Garamond', serif, cursive;
-  font-weight:900;
+  font-weight:500;
   text-align: center;
+  margin-top: 10%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .aboutus {
     display:contents; /* Use flexbox to make containers go horizontally */
-    max-width: 80%;
+    max-width: 60%;
     align-items: center;
     margin: 0 auto; /* Center the container horizontally */
 }
@@ -186,9 +191,10 @@ tr:hover {
 .aboutdani img {
     display: block; /* Remove any default inline spacing */
     margin: 0 auto; /* Center the images horizontally */
-    max-width: 50%; /* Ensure images don't exceed container width */
+    max-width: 40%; /* Ensure images don't exceed container width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
+    padding-top: 10%;
 }
 
 .aboutdon a,
@@ -196,10 +202,12 @@ tr:hover {
 .aboutdani a {
     display: block;
   margin: 0 auto; /* Center the images horizontally */
-  max-width: 50%; /* Ensure images don't exceed container width */
+  max-width: 60%; /* Ensure images don't exceed container width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 5px;
-    font-family: 'Garamond', serif, cursive;
+  font-size: 2.5vw;
+  font-family: 'Garamond', serif, cursive;
+  padding-bottom: 5%;
 }
 
 .aboutrel a:last-child {
@@ -208,19 +216,17 @@ tr:hover {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f8f8;
+    background-color: #dce5dc;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 80%;
-    margin: 50px auto;
     padding: 30px;
-    background-color: #f9f9f9;
+    background-color: #dce5dc;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center; /* Center align content */
+    margin-top: 10%;
 }
 
 .container h1 {
@@ -228,12 +234,15 @@ body {
 }
 
 .container p {
-    margin-bottom: 15px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 5;
+  font-weight: 1;
+    
 }
 
 .event {
-    margin-bottom: 40px;
-    margin-left: 5vw;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -300,5 +309,30 @@ p {
   font-family: monospace;
   font-size: 5;
   font-weight: 1;
+}
+
+.queans {
+    padding: 30px;
+    background-color: #dce5dc;
+    border-radius: 15px;
+    margin: 0 auto; /* Center horizontally */
+    text-align: center;
+    max-width: 60%;
+    padding-top: 20%;
+}
+
+.queans h1 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 5;
+  font-weight: 1;
+}
+
+.queans p {
+  text-align: center;
+  font-family: monospace;
+  font-size: 5;
+  font-weight: 1;
+  padding-bottom: 8vw;
 }
 
